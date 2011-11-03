@@ -1,3 +1,9 @@
+# revision 16980
+# category Package
+# catalog-ctan /info/examples/LaTeX-Referenz2
+# catalog-date 2010-02-12 13:59:30 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-latex-referenz
 Version:	20100212
 Release:	1
@@ -113,6 +119,7 @@ example class ttctexa.cls, which is in the distribution.
 %doc %{_texmfdistdir}/doc/latex/latex-referenz/09-03-8.ltx
 %doc %{_texmfdistdir}/doc/latex/latex-referenz/09-03-9.ltx
 %doc %{_texmfdistdir}/doc/latex/latex-referenz/README
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -123,3 +130,5 @@ example class ttctexa.cls, which is in the distribution.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
