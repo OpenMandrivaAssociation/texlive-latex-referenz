@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-referenz.do
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This bundle contains all the examples, as source, eps and pdf,
@@ -119,7 +117,6 @@ example class ttctexa.cls, which is in the distribution.
 %doc %{_texmfdistdir}/doc/latex/latex-referenz/09-03-8.ltx
 %doc %{_texmfdistdir}/doc/latex/latex-referenz/09-03-9.ltx
 %doc %{_texmfdistdir}/doc/latex/latex-referenz/README
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -130,5 +127,3 @@ example class ttctexa.cls, which is in the distribution.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
