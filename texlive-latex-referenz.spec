@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-latex-referenz
 Version:	20130906
-Release:	3
+Release:	4
 Summary:	Examples from the book "LaTeX Referenz"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/LaTeX-Referenz
