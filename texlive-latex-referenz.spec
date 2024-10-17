@@ -3,7 +3,7 @@ Version:	20190228
 Release:	2
 Summary:	Examples from the book "LaTeX Referenz"
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/examples/LaTeX-Referenz
+URL:		https://www.ctan.org/tex-archive/info/examples/LaTeX-Referenz
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-referenz.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-referenz.doc.tar.xz
